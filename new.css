@@ -1,0 +1,190 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and overall styling */
+.body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header & Navbar Styling */
+.header {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-list {
+  display: inline-flex;
+  list-style: none;
+}
+
+.navbar-item {
+  margin-right: 20px;
+}
+
+.navbar-item:last-child {
+  margin-right: 0;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover {
+  color: #ff6347;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to right, #ff6347, #ffcc00);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* About Section */
+.about-section {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Contact Form Section */
+#contact {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #ff6347;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff4500;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+.footer p {
+  font-size: 1rem;
+}
+
+/* Responsive Design (Mobile-First Approach) */
+@media (max-width: 768px) {
+  .navbar-list {
+      flex-direction: column;
+  }
+
+  .navbar-item {
+      margin-bottom: 10px;
+  }
+
+  .hero-title {
+      font-size: 2.5rem;
+  }
+
+  .hero-description {
+      font-size: 1rem;
+  }
+
+  .section-title {
+      font-size: 1.5rem;
+  }
+
+  /* Contact form adjustments */
+  form {
+      gap: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+      font-size: 0.9rem;
+  }
+
+  input[type="submit"] {
+      font-size: 1rem;
+  }
+}
